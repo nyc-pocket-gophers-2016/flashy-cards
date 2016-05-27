@@ -1,0 +1,13 @@
+<h1>login page </h1>
+<form action ="/sessions" method="post">
+  <label> Email: </label>
+  <input type="email" name="user[email]">
+  <label> Password: </label>
+  <input type="password" name="user[password]">
+  <input type="submit" value="Submit">
+</form>
+
+<% if @error %>
+<h4 class="red"> error: <%= @error %> </h4>
+<% end %>
+

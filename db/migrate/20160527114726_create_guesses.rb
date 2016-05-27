@@ -1,9 +1,9 @@
 class CreateGuesses < ActiveRecord::Migration
   def change
     create_table :guesses do |t|
-    t.references :card, null: false, foreign_key: true
-    t.references :round, null: false, foreign_key: true
-    t.references :user, null: false, foreign_key: true
+    t.references :card, null: false
+    t.references :round, null: false
+    t.references :user, null: false
 
     t.boolean :correct, default: false
     t.string :user_input, null: false
