@@ -1,9 +1,4 @@
-#get decks
 
-get '/decks' do
-  @deck = Deck.all
-  erb :'decks/index'
-end
 
 #post rounds
 post '/rounds' do
